@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ButtomAppBar extends StatefulWidget {
-  const ButtomAppBar({Key? key}) : super(key: key);
+  const ButtomAppBar({super.key});
 
   @override
   _ButtomAppBarState createState() => _ButtomAppBarState();
@@ -14,10 +14,10 @@ class _ButtomAppBarState extends State<ButtomAppBar> {
   int pageIndex = 0;
 
   final pages = [
-    const HomePage(),
-    const Page2(),
-    const Page3(),
-    const Page4(),
+    HomePage(),
+    const History(),
+    const MyRides(),
+    const Setting(),
   ];
 
   @override
@@ -86,7 +86,7 @@ class _ButtomAppBarState extends State<ButtomAppBar> {
                         color: Colors.black,
                       )
                     : SvgPicture.asset(
-                        'assets/icons/03.svg',
+                        'assets/icons/02.svg',
                         color: Colors.black,
                       )),
         IconButton(

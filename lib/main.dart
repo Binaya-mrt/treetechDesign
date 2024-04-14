@@ -13,8 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primaryColor: const Color(0xffFF9900),
-      ),
+          primaryColor: const Color(0xffFF9900), fontFamily: 'Manrope'),
       debugShowCheckedModeBanner: false,
       title: 'Tree tech Design',
       home: const ButtomAppBar(),
