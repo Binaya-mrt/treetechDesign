@@ -1,7 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -66,17 +64,17 @@ class HomePage extends StatelessWidget {
               ),
               sliderFunctionality(context),
               // 600 16 700 12
-              Text(
+              const Text(
                 'Categories',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
               GridView.count(
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 crossAxisCount: 2,
                 mainAxisSpacing: 10,
                 crossAxisSpacing: 10,
-                children: [
+                children: const [
                   CategoriesCard(
                     title: "RESERVATIONS",
                     url: 'assets/images/car.png',
@@ -128,7 +126,7 @@ class HomePage extends StatelessWidget {
 }
 
 class CategoriesCard extends StatelessWidget {
-  CategoriesCard({super.key, required this.url, required this.title});
+  const CategoriesCard({super.key, required this.url, required this.title});
   final String url;
   final String title;
 
@@ -146,7 +144,7 @@ class CategoriesCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(url),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Text(
@@ -191,7 +189,7 @@ class MyRides extends StatelessWidget {
         titleSpacing: 10.0,
         centerTitle: true,
         elevation: 0,
-        title: Text(
+        title: const Text(
           'My Ride',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
         ),
@@ -208,7 +206,7 @@ class MyRides extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xff000000).withOpacity(0.4),
+                      color: const Color(0xff000000).withOpacity(0.4),
                     )),
               ),
               Row(
@@ -231,7 +229,7 @@ class MyRides extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Text('Destination Details',
+                  const Text('Destination Details',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
@@ -245,8 +243,8 @@ class MyRides extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 8.0),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 8.0),
                         child: VerticalDivider(
                           color: Colors.black26,
                           thickness: 2,
@@ -261,15 +259,15 @@ class MyRides extends StatelessWidget {
                         ),
                         height: 150,
                         // width: MediaQuery.sizeOf(context).width / 2,
-                        child: Text("Hya mula"),
+                        child: const Text("Hya mula"),
                       ))
                     ]),
               ),
-              Row(
+              const Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(
+                    padding: EdgeInsets.only(
                       right: 10.0,
                     ),
                     child: Card(
@@ -298,8 +296,8 @@ class MyRides extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 8.0),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 8.0),
                         child: VerticalDivider(
                           color: Colors.black26,
                           thickness: 2,
@@ -314,16 +312,16 @@ class MyRides extends StatelessWidget {
                         ),
                         height: 150,
                         // width: MediaQuery.sizeOf(context).width / 2,
-                        child: Text("Hya mula"),
+                        child: const Text("Hya mula"),
                       ))
                     ]),
               ),
-              Row(
+              const Row(
                 // mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(
+                    padding: EdgeInsets.only(
                       right: 10.0,
                     ),
                     child: Card(
@@ -351,8 +349,8 @@ class MyRides extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 8.0),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 8.0),
                       child: VerticalDivider(
                         color: Colors.black26,
                         thickness: 2,
@@ -367,7 +365,7 @@ class MyRides extends StatelessWidget {
                       ),
                       height: 150,
                       // width: MediaQuery.sizeOf(context).width / 2,
-                      child: Text("Hya mula"),
+                      child: const Text("Hya mula"),
                     ))
                   ]),
 
@@ -376,13 +374,13 @@ class MyRides extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: Text(
-                    'View in Map',
-                    style: TextStyle(color: Colors.white, fontSize: 16),
-                  ),
                   style: ElevatedButton.styleFrom(
                       minimumSize: const Size.fromHeight(50),
                       backgroundColor: Theme.of(context).primaryColor),
+                  child: const Text(
+                    'View in Map',
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
                 ),
               )
             ]),
