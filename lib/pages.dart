@@ -312,9 +312,132 @@ class MyRides extends StatelessWidget {
                             color: Colors.black26,
                           ),
                         ),
-                        height: 150,
-                        // width: MediaQuery.sizeOf(context).width / 2,
-                        child: const Text("Hya mula"),
+
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Image.asset('assets/images/car.png'),
+                                    const Text(
+                                      'Scorpio',
+                                      style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w500),
+                                    )
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+                                    const Text(
+                                      'BA 2 PA 007',
+                                      style: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                    Text(
+                                      'Rs. 200',
+                                      style: TextStyle(
+                                          fontSize: 24,
+                                          fontWeight: FontWeight.w700,
+                                          color:
+                                              Theme.of(context).primaryColor),
+                                    ),
+                                    const Text(
+                                      '3 KM Away',
+                                      style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w500,
+                                          color: Colors.black54),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            const Padding(
+                              padding:
+                                  EdgeInsets.symmetric(horizontal: 12.0),
+                              child: Divider(),
+                            ),
+                            const Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Row(
+                                  children: [
+                                    Card(
+                                      child: CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        radius: 15,
+                                        child: Icon(
+                                          FontAwesomeIcons.cookie,
+                                          size: 15,
+                                          color: Color(0xffEDD500),
+                                        ),
+                                      ),
+                                    ),
+                                    Column(
+                                      children: [
+                                        Text(
+                                          '4',
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.w500,
+                                              color: Colors.black),
+                                        ),
+                                        Text(
+                                          'Wheeler',
+                                          style: TextStyle(
+                                              fontSize: 9,
+                                              fontWeight: FontWeight.w500,
+                                              color: Colors.black),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Card(
+                                      child: CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        radius: 15,
+                                        child: Icon(
+                                          FontAwesomeIcons.person,
+                                          size: 15,
+                                          color: Color(0xffEDD500),
+                                        ),
+                                      ),
+                                    ),
+                                    Column(
+                                      children: [
+                                        Text(
+                                          '4',
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.w500,
+                                              color: Colors.black),
+                                        ),
+                                        Text(
+                                          'Person',
+                                          style: TextStyle(
+                                              fontSize: 9,
+                                              fontWeight: FontWeight.w500,
+                                              color: Colors.black),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ))
                     ]),
               ),
@@ -361,7 +484,7 @@ class MyRides extends StatelessWidget {
                     Expanded(
                         child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 13),
+                          const EdgeInsets.symmetric(vertical: 10, horizontal: 13),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(13),
                         border: Border.all(
@@ -374,7 +497,7 @@ class MyRides extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Row(
+                          const Row(
                             children: [
                               Row(
                                 children: [
@@ -411,7 +534,7 @@ class MyRides extends StatelessWidget {
                           Column(
                             children: [
                               Container(
-                                margin: EdgeInsets.only(bottom: 4),
+                                margin: const EdgeInsets.only(bottom: 4),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(13),
                                   border: Border.all(
@@ -425,7 +548,7 @@ class MyRides extends StatelessWidget {
                                   color: Theme.of(context).primaryColor,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 'Call',
                                 style: TextStyle(color: Colors.black87),
                               ),
