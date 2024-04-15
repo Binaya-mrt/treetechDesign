@@ -1,4 +1,7 @@
-import 'package:design/pages.dart';
+import 'package:design/pages/screens/history.dart';
+import 'package:design/pages/screens/rides.dart';
+import 'package:design/pages/screens/setting.dart';
+import 'package:design/pages/screens/homepaage.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -14,7 +17,7 @@ class _ButtomAppBarState extends State<ButtomAppBar> {
   int pageIndex = 0;
 
   final pages = [
-    HomePage(),
+    const HomePage(),
     const History(),
     const MyRides(),
     const Setting(),
