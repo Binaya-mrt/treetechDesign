@@ -12,7 +12,7 @@ The task involves the following steps:
 - Code Quality: Write clean,readable, and well-structured Flutter code following best practices.
 - Testing: Test the widget layout on multiple device sizes and orientations to ensure responsiveness and compatibility. 
 
-##Getting Started
+## Getting Started
 To get started with the project, follow these steps:
 
 - Clone the repository to your local machine. 
